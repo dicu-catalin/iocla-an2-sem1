@@ -1,0 +1,30 @@
+One time pad - Parcurge stringurile de la sfarsit catre inceput, copiaza literele
+	       in registrele al si bl si face xor intre acestea dupa care pune
+	       rezultatul(din al) in noul string.
+
+Caesar Cipher - Reduce cheia la o valoare din intervalul [0, 25] in cazul in care
+		aceasta este mai mare. Parcurge stringul de la sfarsit catre
+		inceput si verifica daca litera curenta este mai mica decat 'Z'
+		(litera mare) sau mai mare decat 'a'(litera mica). Dupa aceea
+		verifica daca aceasta este litera sau alte caractere si aduna
+		cheia. Daca se depaseste valoarea literelor mari/mici, in functie
+		de cum erau la inceput, se scade 26.
+
+Vigenere Cipher - Parcurge fiecare cracter din fraza si din cheie de la inceput
+		  si verifica daca litera curenta este litera mare sau litera
+		  mica. In cazul in care caracterul din fraza este litera, se 
+		  aduna la ea diferenta dintre litera din cheie si 'A'. Daca
+		  litera se transforma din litera mare in litera mica, sau din
+		  litera mica in alt caracter, din aceasta se scade 26.
+
+StrStr - Parcurge fraza de la inceput spre sfarsit, la fel si substringul.
+	 Atunci cand se gaseste o diferenta intre cheie si caracterul din fraza,
+	 cheia se reseteaza si incepe cautarea din locul in care a ramas. In 
+	 cazul in care cheia s-a terminat si toate caracterele au fost egale,
+	 indicele devine 0, iar pana la finalul executiei acesta creste si va
+	 fi pozitia de la care incepe secventa comuna.
+
+Bin to hex - Calculeaza cate secvente de 4 biti sunt in input. Parcurge numarul
+	     in binar de la inceput spre sfarsit. Calculeaza suma celor 4 biti
+	     si o transforma in litera in cazul in care aceasta este mai mare
+	     decat 9.
