@@ -1,0 +1,10 @@
+	Functia iocla_printf parcurge fiecare caracter din stringul primit.
+Verifica daca acesta este un specificator(%d, %u, etc.) sau caracter special
+(%%, \\). In cazul in care este specificator citeste urmatorul element primit
+ca parametru si in functie de tipul acestuia il transforma in string folosind
+functiile auxiliare itoa(int to string, din cartea C Programming Language, 2nd
+edition), utoa(unsigned int to string, adaptata dupa itoa) si print_hexa(care
+transforma din decimal in hexa si il retine intr-ul string, dupa care il afiseaza)
+In cazul in care este un caracter special, acesta va fi afisat o singura data.
+In rest, va afisa caracter cu caracter pana cand stringul se termina.
+
