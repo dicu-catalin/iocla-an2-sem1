@@ -1,0 +1,20 @@
+Iocla_atoi - Iau sirul de caractere si verific daca primul caracter este "-",
+	     iar in cazul in care este sar peste acest caracter. Parcurg fiecare
+	     caracter din string si il transform in cifrasi o adun la eax. De 
+	     fiecare data, inainte sa adaug noua cifra obtinuta, inmultesc eax cu 10.
+	     Dupa ce am parcurs fiecare caracter, verific iar daca primul
+	     caracter este "-" si daca este, inmultesc eax cu -1.
+
+Create_tree - Separ stringul initial cu strtok, copiez valoarea primului token
+	      cu strdup si o pun in nodul radacina, creeat cu malloc. Radacina
+	      o pun pe stiva, deoarece nu e terminata(nu are fiu stanga\dreapta)
+	      Pentru urmatoarele noduri, verific daca tokenul corespunzator
+	      este numar sau semn. Extrag ultimul nod de pe stiva. Daca tokenul
+	      este semn, iar nodul extras nu are fiu stanga, pun noul nod ca
+	      fiu stanga si pun nodurile pe stiva, altfel pun nodul ca fiu 
+	      dreapta si pun pe stiva doar nodul curent, fara nodul anterior.
+	      Daca tokenul este un numar, iar nodul extras nu are fiu stanga, 
+	      pun noul nod ca fiu stanga si pe stiva pun doar nodul anterior,
+	      deoarece un nod ce contine numar nu poate avea fii. Altfel, daca
+	      nodul extras are fiu stanga, pun nodul curent ca fiu dreapta si
+	      nu mai pun nimic pe stiva.
